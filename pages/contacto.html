@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Nombre y Favicon -->
+    <title>Sobre Nosotros</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+    <!-- Fin Nombre y Favicon -->
+
+    <!-- Link Documento CSS-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Fin Link Documento CSS-->
+
+    <!-- Link Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Fin Link Fuentes Google -->
+
+</head>
+<body>
+
+    <!--- Menú de Navegación Header -->
+    <header class="NavBar">
+        <a href="/index.html"><img src="/assets/img/logohuellasacasahorizontal.png" class="ImgChica" alt="Logo Huellitas a Casa"></a>
+        <form>
+            <input type="search" placeholder="¿Qué estás buscando?"><input class="BotonBuscar" type="submit" value="Buscar">
+        </form>
+        <nav>
+
+             <ul>
+                <li class="CTANavMenu"><a href="/pages/adopta.html">Adoptá</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/involucrarse.html">Involucrarse</a></li>
+                <li><a href="/pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+           </ul>
+        </nav>
+    </header>
+<!--- Fin Menú de Navegación Header -->
+    
+    <section id="ImagenHeader" class="BackgroundHeaderImagen4">
+        
+        <div>
+            <h1 class="TituloHeader">Hablá con nosotros :) </h1>
+        </div>
+        <div class="CentrarBloque"><a href="#Formulario">
+            <button class="CTACarrusel">Conocer más</button>
+        </a></div>
+        
+    </section>
+
+     <!--- Formulario de Contacto -->
+     <section id="HablaConNosotros">
+
+        <!--- Título y Subtitulo -->
+        <h2 class="Titulo CentrarBloque"> ¿Tenés dudas? Hablá con el equipo de Huellitas a Casa</h2>
+        <h3 class="Subtitulo CentrarBloque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores accusantium fuga eaque quas sit quam</h3>
+        <!--- Fin Título y Subtitulo -->
+        
+        <main>
+            <form id="Formulario" action=""> <!-- Action queda vacío momentáneamente porque desde acá se indica conexión a BBDD-->
+            
+                <div class="Columnas">
+                        <div><label for="nombre">Nombre*</label><br>   
+                        <input type="text" id="nombre" name="Nombre" placeholder="Indicános tu nombre" required>  
+                        </div>
+
+                        <div>
+                        <label  for="apellido">Apellido*</label><br>      
+                        <input type="text" id="apellido" name="Apellido" placeholder="Indicános tu apellido" required><br>   
+                        </div>
+                </div>
+
+                <div class="Columnas">
+                        <div><label for="tel">Teléfono*</label><br>      
+                        <input type="tel" id="tel" name="Telefono" placeholder="Ejemplo: 1160606060" required>
+                        </div>
+
+                        <div><label for="Mail">Mail*</label><br>      
+                        <input type="email" id="Mail" name="Mail" placeholder="Ejemplo: huellitasacasa@gmail.com" required>
+                        </div>
+                </div>
+                    <br>
+                <div>
+                    <label for="comentarios">Contános por qué querés contactarte con nosotros</label><br>
+                    <textarea name="Comentarios" id="comentarios">Dejanos acá tu mensaje.</textarea><br>
+                </div>
+
+                <br><input class="CTAGenerales" type="submit" value="Hablar con Huellitas a Casa">
+            </form>
+        </main>
+    </section>
+     <!--- Fin Formulario de Contacto -->
+
+    <!--- Footer -->
+    <footer id="Legales">      
+        <div>
+            <img src="/assets/img/logohuellasacasa.png" class="ImgMediana" alt="Logo Huellas a Casa">
+        </div>
+        <div>
+            <h4>Huellitas a casa</h4>
+            <p>Es una asociación civil sin fines de lucro..</p>
+        </div>
+
+        <nav>
+            <h4>Menú</h4>
+                <ul>
+                    <li><a href="/pages/adopta.html">Adoptá</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/involucrarse.html">Involucrarse</a></li>
+                    <li><a href="/pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                </ul>
+        </nav>
+
+        <div>
+            <h4>Políticas de adopción</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adip</p>
+        </div>
+        <div >
+            <h4>Seguinos en:</h4>
+            <a href="https://www.instagram.com/" target="_blank"><img src="/assets/img/rrss/instagram.png" class="LogosRRSS" alt="Logo Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/assets/img/rrss/facebook.png" class="LogosRRSS" alt="Logo Facebook"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="/assets/img/rrss/youtube.png"  class="LogosRRSS" alt="Logo Youtube"></a>
+        </div>
+
+    </footer>
+    <!--- Fin Footer -->
+</body>
+</html>

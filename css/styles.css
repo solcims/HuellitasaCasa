@@ -90,31 +90,31 @@ ul li a
 
 /*Background Header Imagen*/
 .BackgroundHeaderImagen
-    {background-image: url(/assets/img/header/perrofelizfondo.png);
+    {background-image: url(../assets/img/header/perrofelizfondo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;}
 
 .BackgroundHeaderImagen2
-    {background-image: url(/assets/img/header/perroseasomanariz.png);
+    {background-image: url(../assets/img/header/perroseasomanariz.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;}
 
 .BackgroundHeaderImagen3
-    {background-image: url(/assets/img/header/sobrenosotros.png);
+    {background-image: url(../assets/img/header/sobrenosotros.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;}
 
 .BackgroundHeaderImagen4
-    {background-image: url(/assets/img/header/hablaconnosotros.png);
+    {background-image: url(../assets/img/header/hablaconnosotros.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;}
 
     .BackgroundHeaderImagen5
-    {background-image: url(/assets/img/header/perroygatoheader.png);
+    {background-image: url(../assets/img/header/perroygatoheader.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;}

@@ -33,6 +33,7 @@ body {font-family: 'Poppins', sans-serif !important}
     background: rgba(255, 255, 255) !important;}
 
 .CTAMenuHeader {
+    color: rgb(255, 255, 255);
     border-radius: 20px;
     background: rgb(255, 198, 172);
     box-shadow: 2px 2px 2px 0px rgba(66, 66, 66, 0.09);
@@ -66,7 +67,7 @@ body {font-family: 'Poppins', sans-serif !important}
 
 .carousel-caption {bottom: 27%;}
 
-.btn-header {color: aliceblue;
+.btn-header {color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 1.5rem;
     border-radius: 1.5rem;
@@ -124,7 +125,7 @@ h3 {
     color: rgb(51, 51, 51);
     font-weight: normal;}
 
-.btn-primary {color: aliceblue;
+.btn-primary {color: rgb(255, 255, 255);
     font-weight: 600;
     border-radius: 1.5rem;
     border-style: none;
@@ -216,3 +217,40 @@ iframe {
 }
 
 /* Fin CSS Legales */
+
+/* CSS Paginación */
+.page-link {
+    border-style: none;
+    color: rgb(196, 193, 164);
+}
+
+.page-link:hover {
+    color:rgb(130, 127, 100);
+    background-color: rgb(255, 198, 172);
+    border-radius: 1.5 rem;
+}
+
+
+/* Fin CSS Paginación */
+
+/* CSS Contacto */
+
+#HablaConNosotros form div div input {
+    border-radius: 1rem;
+    padding: 4px 10px;
+    width: 65%;
+    border-color:rgb(196, 193, 164);
+    border-width: 1px;
+}
+
+#HablaConNosotros form div div textarea {
+    border-radius: 1rem;
+    padding: 4px 15px;
+    width: 50%;
+    border-color:rgb(196, 193, 164);
+    border-width: 1px;
+    color: rgb(89, 90, 90);
+}
+
+
+/* Fin CSS Contacto */

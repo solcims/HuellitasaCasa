@@ -1,412 +1,162 @@
-/* Medida REM Simplificada */
-html 
-    {font-size: 62.5%;} /*1 REM=10 px */
-
 /* Reseteo */
 * 
     {margin: 0;
     padding: 0;
     box-sizing: border-box;}
 
-/* Header FlexBox */
-header 
-    {display: flex;
-    padding: 7px;
-    color: rgb(51, 51, 51);
-    font-size: 1.5rem;
-    font-weight: normal;
-    font-family: 'Poppins', sans-serif;
-    align-items: center;}
-
-header nav {margin-left: auto;}
-/* Fin Header FlexBox */
-
-
-/* Estilos Header Form */
-header form 
-    {margin-left: 25px;}
-
-header form input 
-    {border-radius: 55px;
-    border-color: rgb(51, 51, 51);
-    padding: 5px;}
-
-.BotonBuscar 
-    {background-color: none;
-    border: none;
-    padding: 5px 10px;
-    margin-left: 10px;}
-
-/* Fin Header Form*/
-
-
-/* Nav Bar Menú Lista*/
-ul 
-    {list-style: none;
-    display: flex;}
-
-/*Formato de Bloque para listas*/
-ul li a
-    {display: block;
-    padding: 5px 15px;
-    text-decoration: none;
-    color: rgb(51, 51, 51);
-    font-size: 1.5rem;
-    font-weight: normal;
-    font-family: 'Poppins', sans-serif;
-    }
-
-/* Nav Bar Menú Estilo*/
-.NavBar 
-    {background: rgba(255, 255, 255);
-    border-radius: 0px;
-    box-shadow: 0 1px 5px rgba(189, 189, 189, 0.3);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    width: 100%;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;}
-
-/*CTA Nav Menu*/
-.CTANavMenu
-    {border-radius: 55px;
-    background: rgb(255, 198, 172);
-    box-shadow: 2px 2px 2px 0px rgba(66, 66, 66, 0.09);
-    padding: 3px 10px;}
-
-
-/* Bloque de Mascotas */
-.BloqueMascotas 
-    {background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);}
-
-
-/*Background Header Imagen*/
-.BackgroundHeaderImagen
-    {background-image: url(../assets/img/header/perrofelizfondo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;}
-
-.BackgroundHeaderImagen2
-    {background-image: url(../assets/img/header/perroseasomanariz.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;}
-
-.BackgroundHeaderImagen3
-    {background-image: url(../assets/img/header/sobrenosotros.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;}
-
-.BackgroundHeaderImagen4
-    {background-image: url(../assets/img/header/hablaconnosotros.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;}
-
-    .BackgroundHeaderImagen5
-    {background-image: url(../assets/img/header/perroygatoheader.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;}
-
-/* Fin Background Header Imagen*/
-
-/* Estilos Sobre Nosotros*/
-
-#EquipoHuellitas {justify-content: center;}
-
-#EquipoHuellitas article div p {margin-top: 20px;}
-
-.Columnas
-    {display: flex;
-    width: 65%;
-    justify-content: center;
-    margin: auto;   
-    margin-top: 30px;}
-
-.Columna 
-    {flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 55%;
-    text-align: center;
-    color: rgb(51, 51, 51);
-    font-size: 2rem;
-    font-weight: normal;
-    font-family: 'Poppins', sans-serif}
-
-.ImagenEquipo
-    {width: 50%;
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-    border-radius: 16px;
-    justify-content: center;}
-
-/* Fin Estilos Sobre Nosotros*/
-
-/* Estilos Involucrarse*/
-
-#ConvertiteEnHuelliter {justify-content: center;}
-
-#ConvertiteEnHuelliter div article
-    {display: flex;
-    width: 65%;
-    justify-content: center;
-    margin: auto;
-    padding: 30px 30px 30px  30px; 
-    margin-top: 50px;
-    align-items: center;
-    background: rgba(255, 246, 220);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);}
-
-#ConvertiteEnHuelliter div article div
-    {flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 50%;}
-
-#ConvertiteEnHuelliter div article div h1
-    {text-align:start;}
-
-#ConvertiteEnHuelliter div article p 
-    {text-align:start;
-    color: rgb(51, 51, 51);
-    font-size: 1.5rem;
-    font-weight: normal;
-    font-family: 'Poppins', sans-serif}
-
-#DudasHablaConNosotros 
-    {margin-top: 50px;
-    margin-bottom: 50px;}
-
-#DudasHablaConNosotros h1 {margin-bottom: 20px;}
-
-.CTAHablaConNosotros
-    {color: aliceblue;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    border-radius: 68px;
-    border-style: none;
-    background: rgb(255, 198, 172);
-    display: flex;
-    padding: 10px 35px;
-    margin: auto;
-    justify-content: center;
-    gap: 9px;}
-
-
-/* Fin Estilos Involucrarse*/
-
-/* Hablá con Nosotros*/
-
-#HablaConNosotros main
-    {display: flex;
-    justify-content: center;
-    margin: auto;}
-
-#HablaConNosotros main form 
-    {margin-top: 30px;
-    justify-content: center;
-    color: rgb(51, 51, 51);
-    font-size: 1.5rem;
-    font-weight: normal;
-    font-family: 'Poppins', sans-serif}
-
-#HablaConNosotros main form div {padding-right: 40px;}
-
-#HablaConNosotros main form input
-    {border-radius: 55px;
-    border-color: rgb(196, 193, 164);
-    border-width: 2px;
-    padding: 5px;
-    font-size: 1.5rem;
-    font-weight: normal;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(92, 92, 92);}
-
-#HablaConNosotros main form textarea
-    {border-radius: 10px;
-    border-color: rgb(196, 193, 164);
-    border-width: 2px;
-    padding: 5px;
-    font-size: 1.5rem;
-    font-weight: normal;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(92, 92, 92);}
-
-/* Fin Hablá con Nosotros*/
-
-/* Estilos Involucrarse*/
-
-#InvolucrarseHome {margin-top: 80px;}
-
-/* Fin Estilos Involucrarse*/
-
-/*Bloque Sección Header*/
-#ImagenHeader 
-    {padding: 220px;
-    margin-bottom: 30px;}
-
-     
-/*Estilo Títulos Header*/
-.TituloHeader
-    {color: rgb(255, 255, 255);
-    font-size: 6.5rem;
-    font-weight: bold;
-    font-family: 'Rubik', sans-serif;
-    width: auto;
-    margin: auto;
-    text-align: center;
-    padding: 15px;}
-
-/*CTA Generales*/
-.CTAGenerales 
-    {color: aliceblue;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    border-radius: 68px;
-    border-style: none;
-    background: rgb(255, 198, 172);
-    display: flex;
-    padding: 7px 25px;
-    gap: 9px;}
-
-/*CTA Carrusel*/
-.CTACarrusel 
-    {color: aliceblue;
-    text-align: center;
-    font-size: 2.8rem;
-    font-weight: 700;
-    border-radius: 68px;
-    border-style: none;
-    background: rgb(255, 198, 172);
-    display: flex;
-    padding: 10px 35px;
-    margin: auto;
-    justify-content: center;
-    gap: 9px;}
-
-a {text-decoration: none;}
-
-/*Estilo Títulos Principales*/
-.Titulo
-    {color: rgb(51, 51, 51);
-    font-size: 3.5rem;
-    font-weight: 500;
-    font-family: 'Rubik', sans-serif;}
-
-/*Centrar bloque*/
-.CentrarBloque
-    {width: 45%;
-    margin: auto;
-    text-align: center;
-    padding: 5px;}
-
-/*Estilo Títulos Secundarios*/
-.Subtitulo
-    {color: rgb(51, 51, 51);
-    font-size: 2rem;
-    font-weight: normal;
-    font-family: 'Rubik', sans-serif;}
-
-/*Estilo Párrafos*/
-.Contenidos 
-    {color: rgb(51, 51, 51);
-    font-size: 1.5rem;
-    font-weight: normal;
-    font-family: 'Poppins', sans-serif;}
-
+body {font-family: 'Poppins', sans-serif !important}
 
 /* Imagen Mediana */
 .ImgMediana 
     {width: 100px;
     height: 100px}
+/* Fin Imagen Mediana */
 
-/* Imagen Chica */
-    .ImgChica
+/* Imagen Reviews */
+.ImgReviews
+    {width: 65% !important;}
+/* Fin Imagen Mediana */
+
+/* CSS Header */
+.ImgChica
     {width: 110px;
     height: 50px}
 
-/* Tarjetas de Mascotas en Adopción */
-#MascotasEnAdopcion 
-    {justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;}
+.NavBarHeader 
+    {border-radius: 0px;
+    box-shadow: 0 1px 5px rgba(189, 189, 189, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 5;}
 
-.TarjestasMascotas {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;}
+.bg-light {
+    background: rgba(255, 255, 255) !important;}
 
-.FormatoTarjeta {
-    flex: 0 0 260px;
-    margin: 10px 20px 10px 20px;
-    padding: 30px 0px 15px 0px;
-    border: 1px solid #ccc;
-    border-radius: 16px;
+.CTAMenuHeader {
+    border-radius: 20px;
+    background: rgb(255, 198, 172);
+    box-shadow: 2px 2px 2px 0px rgba(66, 66, 66, 0.09);
+    margin: 2px 5px;
+    padding: 6px 20px !important;
+    transition: .5s;}
+
+.navbarjustifyend {
+    justify-content: end !important;}
+
+.nav-link {
+    color: rgb(51, 51, 51) !important;}
+
+.nav-link:hover {
+    color: rgb(255, 198, 172) !important;}
+
+.CTAMenuHeader:hover {
+    background: rgb(251, 168, 129);
+    color: rgb(51, 51, 51) !important;}
+
+.active {
+    color: rgb(251, 168, 129) !important;}
+
+.d-item {
+    height: 700px;}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);}
+
+.carousel-caption {bottom: 27%;}
+
+.btn-header {color: aliceblue;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    border-style: none;
+    background: rgb(255, 198, 172);
+    padding: 7px 25px;
+    transition: 0.5s;
+}
+
+.btn-header:hover {
+    background: rgb(251, 168, 129);
+    color: rgb(51, 51, 51);
+    transform: scale(1.03);
+}
+
+
+/* Fin CSS Header */
+
+/* CSS Headings */
+
+h2 {
+    font-weight: 600;}
+
+h3 {
+    margin-bottom: 3rem !important;
+}
+
+/* Fin CSS Headings */
+
+
+/* CSS Tarjetas Mascotas */
+.card {
+    border: none !important;
+    border-radius: 1.5rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);}
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.5s;}
 
-.FormatoTarjeta img {
-    display: block;
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    border-radius: calc(1.5rem - 1px);
+    justify-content: center;
     margin: auto;
-    border-radius: 16px;
-    justify-content: center;}
+    width: 80%;
+    margin-top: 2rem;}
 
-  .FormatoTarjeta .text {
-        padding: 0px 20px;
-        margin-top: 15px;
-        text-align: center;
-        color: rgb(51, 51, 51);
-        font-size: 1.5rem;
-        font-weight: normal;
-        font-family: 'Poppins', sans-serif;}
+.card-body {
+    text-align: center;
+    color: rgb(51, 51, 51);
+    font-weight: normal;}
 
-    .ListaVertical
-        {display: block;
-        margin-top: 15px;
-        margin-bottom: 20px;
-        text-decoration: none;
-        color: rgb(51, 51, 51);
-        font-size: 1.5rem;
-        font-weight: normal;
-        font-family: 'Poppins', sans-serif;
-        }
-
-  .FormatoTarjeta .text > a button {
+.btn-primary {color: aliceblue;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    border-style: none;
     background: rgb(255, 198, 172);
-    margin: 10px 0px 10px 0px;
-    border: 0;
-    border-radius: 68px;
-    color: aliceblue;
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 7px 21px;
-    width: 100%;
-    align-items: flex-start;}
+    padding: 7px 25px;}
 
-/* Fin Tarjetas de Mascotas en Adopción */
+.btn-primary:hover {
+    background: rgb(251, 168, 129);
+    color: rgb(51, 51, 51);}
+
+/* Fin CSS Tarjetas Mascotas */
+
+
+/* CSS Tarjetas Huelliters */
+.CardHuelliters {
+    background-color: rgb(255, 246, 220);}
+/* Fin CSS Tarjetas Huelliters */
+
+/* CSS Tarjetas Reviews */
+
+.CardReviews {
+    background-color: none;
+    border-style: none;
+    box-shadow: none;
+}
+
+.CardReviews:hover {
+    transform: none;
+}
 
 /* IFrame */
-iframe 
-    {display: block;
+iframe {
+    display: block;
     margin: auto;
     margin-top: 30px;
     border-radius: 16px;
@@ -417,42 +167,35 @@ iframe
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);}
-
 /* Fin IFrame */
 
-/* Estilo Footer */
-    #Legales
-        {background-color: rgb(158, 159, 165);
-        font-size: 1.2rem;
-        color: rgb(51, 51, 51);
-        font-style: normal;
-        font-family:'Poppins', sans-serif;
-        padding: 20px;
-        padding-top: 40px;
-        margin-top: 40px;
 
-        display: flex;
-        align-items: flex-start;}
+/* CSS Legales */
 
+#Legales {
+    background-color: rgb(158, 159, 165);
+    color: rgb(51, 51, 51);
+    font-family:'Poppins', sans-serif;
+    padding: 20px;
+    padding-top: 40px;
+    margin-top: 40px;}
 
-    #Legales div 
-        {width: 25%;
-        margin: 20px;}
+.LogosRRSS {
+    height: 30px;
+    width: 30px;
+    margin: 10px;}
 
-    #Legales nav ul
-        {display: block;
-        margin-top: 15px;
-        margin-bottom: 20px;}
-    
-    #Legales nav ul li a
-        {text-decoration: none;
-            color: rgb(51, 51, 51);
-            font-size: 1.2rem;
-            font-weight: normal;
-            font-family: 'Poppins', sans-serif;}
+.NavFooter {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-family: 'Poppins', sans-serif;}
 
-    .LogosRRSS
-        {height: 30px;
-        width: 30px;
-        margin: 10px;}
-/* Fin Estilo Footer */
+.NavFooter:hover {
+    color: rgb(255, 198, 172);
+}
+
+.ListaFooter {
+    list-style: none;
+}
+
+/* Fin CSS Legales */

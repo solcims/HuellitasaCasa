@@ -3,118 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Huellitas a Casa</title>
+
     <!-- Nombre y Favicon -->
-    <title>Sobre Nosotros</title>
+    <title>Huellitas a Casa</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
     <!-- Fin Nombre y Favicon -->
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Fin Bootstrap CSS -->
+
     <!-- Link Documento CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Fin Link Documento CSS-->
-
+   
     <!-- Link Fuentes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Fin Link Fuentes Google -->
-
+    
 </head>
 <body>
 
-    <!--- Menú de Navegación Header -->
-    <header class="NavBar">
-        <a href="../index.html"><img src="../assets/img/logohuellasacasahorizontal.png" class="ImgChica" alt="Logo Huellitas a Casa"></a>
-        <form>
-            <input type="search" placeholder="¿Qué estás buscando?"><input class="BotonBuscar" type="submit" value="Buscar">
-        </form>
-        <nav>
-
-             <ul>
-                <li class="CTANavMenu"><a href="../pages/adopta.html">Adoptá</a></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/involucrarse.html">Involucrarse</a></li>
-                <li><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-           </ul>
-        </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light NavBarHeader">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="../assets/img/logohuellasacasahorizontal.png" class="ImgChica"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navbarjustifyend" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link CTAMenuHeader"  href="../pages/adopta.html">Adoptá</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/involucrarse.html">Involucrarse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-<!--- Fin Menú de Navegación Header -->
-    
-    <section id="ImagenHeader" class="BackgroundHeaderImagen3">
-        
-        <div>
-            <h1 class="TituloHeader">Nuestra misión es que todas las huellitas encuentren su hogar</h1>
+
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="active" aria-current="true" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+      
+              <div class="carousel-item d-item">
+                <img src="../assets/img/header/headerhome.png" class="d-block w-100 d-img" alt="Perro feliz">
+                <div class="carousel-caption">
+                    <h1 class="display-3 fw-bolder">Queremos que todas las huellitas encuentren su hogar</h1>
+                    <a href="../pages/index.html" class="btn btn-header">Conocer más</a>
+      
+                </div>
+              </div>
+      
+              <div class="carousel-item d-item">
+                <img src="../assets/img/header/headeradopta.png" class="d-block w-100 d-img" alt="Perro se asoma">
+                <div class="carousel-caption">
+                    <h1 class="display-3 fw-bolder">Involucrarse salva vidas. Adoptá, no compres</h1>
+                    <a href="../pages/adopta.html" class="btn btn-header">Adoptá</a>
+      
+                </div>
+              </div>
+      
+              <div class="carousel-item  d-item">
+                <img src="../assets/img/header/headerinvolucrarse.png" class="d-block w-100 d-img" alt="Perro y gato juegan">
+                <div class="carousel-caption">
+                    <h1 class="display-3 fw-bolder">Convertite en huelliter, involucrarse salva vidas</h1>
+                    <a href="../pages/involucrarse.html" class="btn btn-header">Conocer más</a>
+      
+                </div>
+              </div>
+      
+              <div class="carousel-item  d-item">
+                <img src="../assets/img/header/hablaconnosotros.png" class="d-block w-100 d-img" alt="Perro y gato juegan">
+                <div class="carousel-caption">
+                    <h1 class="display-3 fw-bolder">Hablá con nuestro equipo de Huellitas a Casa</h1>
+                    <a href="../pages/contacto.html" class="btn btn-header">Contactarme</a>
+      
+                </div>
+              </div>
+      
+              <div class="carousel-item active d-item">
+                <img src="../assets/img/header/headernosotros.png" class="d-block w-100 d-img" alt="Perro y gato juegan">
+                <div class="carousel-caption">
+                    <h1 class="display-3 fw-bolder">Conocé la historia del equipo de Huellitas a Casa</h1>
+                    <a href="../pages/sobrenosotros.html" class="btn btn-header">Conocer más</a>
+      
+                </div>
+              </div>
+              
+            </div>
+      
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+      </section>
+
+    <main class="container">
+
+        <!---Sección sobre Nosotros -->
+        <div class="row justify-content-center">
+            <h2 class="m-5 col-xl-6 text-center">Conocé al equipo de Huellitas a Casa</h2>
+            <h3 class="col-xl-7 text-center h4">Buscamos que todos los animales sin hogar encuentren a su familia para siempre.</h3>
         </div>
-        <div class="CentrarBloque"><a href="#MisionYObjetivos">
-            <button class="CTACarrusel">Conocer más</button>
-        </a></div>
+
+        <section>
+            <div class="row mb-5">
+                <div class="col-12 text-center ">
+                    <img src="../assets/img/sobrenosotros/equipohuellitasacasa.jpg" class="ImgInicio">
+                </div>
+            </div>
+            <div class="row text-center g-5">
+                <div class="col-md-6">
+                    <h4 class="h3 fw-bold">Nuestra misión</h4>
+                    <h5 class="fs-5">Nuestra misión es ofrecer refugio y cuidado amoroso a animales en situación de calle, buscando mejorar sus vidas y encontrarles hogares permanentes mientras promovemos la conciencia sobre la adopción responsable.</h5>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="h3 fw-bold">Nuestros Objetivos</h4>
+                    <h5 class="fs-5">Nuestros objetivos son Rescatar, rehabilitar y promover adopciones responsables, educar sobre bienestar animal, colaborar con organizaciones afines y fomentar el respeto hacia los animales.</h5>
+                </div>
+            </div>
+        </section>
         
-    </section>
-
-    <section id="EquipoHuellitas">
-        <h2 class="Titulo CentrarBloque">Conocé al equipo de Huellitas a Casa</h2>
-        <h3 class="Subtitulo CentrarBloque">Donde el amor por los animales se convierte en acción: Huellitas a Casa, un equipo apasionado de voluntarios que comparten una profunda conexión con nuestros amigos peludos.</h3>
-        <div>
-            <img src="../assets/img/sobrenosotros/equipohuellitasacasa.jpg" class="ImagenEquipo" alt="Equipo de Huellitas a Casa">
+        <!---Sección Convertite en Huelliter -->
+        <div class="row justify-content-center">
+            <h2 class="m-5 col-xl-6 text-center">Convertite en huelliter y ayudanos a seguir rescatando</h2>
+            <h3 class="col-xl-7 text-center h4">Podés hacerlo aportándo económicamente, donando, ser voluntario o ¡todos! Te contámos más acerca de cada uno</h3>
         </div>
-        <article  id="MisionYObjetivos" class="Columnas">
-            <div class="Columna">
-                <h4 class="Titulo">Nuestra Misión</h4>
-                <p>Nuestra misión es rescatar a los animales callejeros, brindarles atención, y encontrarles hogares amorosos. Trabajamos para ser el vínculo entre el abandono y una vida llena de cariño, asegurando que cada amigo peludo reciba la segunda oportunidad que merece.</p>
-            </div>
-            <div class="Columna">
-                <h4 class="Titulo">Nuestros Objetivos</h4>
-                <p>Nuestros objetivos son rescatar animales en situación de calle, proporcionarles cuidados médicos y emocionales, y promover su adopción responsable en hogares amorosos. Buscamos crear conciencia sobre la importancia de tratar a los animales con respeto y compasión.</p>
-            </div>
-        </article>
-    </section>
 
-    <!--- Sección Involucrarse -->
-    <section id="InvolucrarseHome">
-        <h2 class="Titulo CentrarBloque">Convertite en huelliter y ayudanos a seguir rescatando</h2>
-        <h3 class="Subtitulo CentrarBloque">Podés hacerlo aportándo económicamente, donando, ser voluntario o ¡todos! Te contámos más acerca de cada uno</h3>
-    </section>
-    
-    <!--- Fin Sección Involucrarse -->
+        <section>
+            <div class="row g-5">
 
-        <!--- Footer -->
-        <footer id="Legales">      
-            <div>
-                <img src="../assets/img/logohuellasacasa.png" class="ImgMediana" alt="Logo Huellas a Casa">
-            </div>
-            <div>
-                <h4>Huellitas a casa</h4>
-                <p>Es una asociación civil sin fines de lucro..</p>
-            </div>
-    
-            <nav>
-                <h4>Menú</h4>
-                    <ul>
-                        <li><a href="../pages/adopta.html">Adoptá</a></li>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/involucrarse.html">Involucrarse</a></li>
-                        <li><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-            </nav>
-    
-            <div>
-                <h4>Políticas de adopción</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adip</p>
-            </div>
-            <div >
-                <h4>Seguinos en:</h4>
-                <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/rrss/instagram.png" class="LogosRRSS" alt="Logo Instagram"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/rrss/facebook.png" class="LogosRRSS" alt="Logo Facebook"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/rrss/youtube.png"  class="LogosRRSS" alt="Logo Youtube"></a>
-            </div>
-    
-        </footer>
-        <!--- Fin Footer -->
+                <div class="col-md-6 col-xl-6">
+                <div class="card CardHuelliters">
+                    <div class="card-body mt-3 mb-3 row ">
+                        <div class="col-4">
+                            <h5 class="card-title h2 fw-bold">Huelliter Traslado</h5>
+                        </div>  
+                        <div class="col-8" >
+                            <p class="card-text text-start ">Ayudás con el <strong>traslado de los perros y gatos rescatados</strong>. Ya sea que tengan que ir a su lugar de tránsito o al vete.</p>
+                        </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="./pages/involucrarse.html" class="mt-4 btn btn-primary">Quiero ser parte</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
 
+                <div class="col-md-6 col-xl-6">
+                    <div class="card CardHuelliters">
+                    <div class="card-body mt-3 mb-3 row ">
+                        <div class="col-4">
+                            <h5 class="card-title h2 fw-bold">Huelliter Tránsito</h5>
+                        </div>  
+                        <div class="col-8" >
+                            <p class="card-text text-start ">Ayudás <strong>cuidando en tu hogar a los perros y gatos rescatados</strong>, hasta que ellos se recuperen y encuentren a ¡su familia para siempre!</p>
+                        </div>
+                        <div class="row">
+                        <div class="col">
+                            <a href="./pages/involucrarse.html" class="mt-4 btn btn-primary">Quiero ser parte</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-xl-12">
+                    <div class="card CardHuelliters">
+                    <div class="card-body mt-3 mb-3">
+                        <h5 class="card-title h2 fw-bold">Huelliter Donación</h5>
+                        <p class="card-text ms-5 me-5">Ayudás económicamente donando cuando puedas a través de este link, o podés hacerlo mensualmente desde acá. También podés ayudarnos donando alimento, insumos veterinarios, ropita, camitas, juguetes o ¡con lo que puedas! <strong>Para vos quizás pueda ser poco, pero cada granito de arena nos ayuda un montón.</strong></p>
+                        <a href="./pages/involucrarse.html" class="btn btn-primary">Quiero donar</a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>    
+        </section>
+        <!---Fin Sección Convertite en Huelliter -->
+
+        
+                <!---Sección Reviews -->
+        <div class="row justify-content-center">
+          <h2 class="m-5 col-xl-6 text-center">Historias con finales felices</h2>
+          <h3 class="col-xl-7 text-center h4">Te contamos las historias de los distintos adoptantes de Huellitas a Casa.</h3>
+       </div>
+
+       <section>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="card h-100 CardReviews">
+              <img src="../assets/img/reviews/review1.png" class="card-img-top ImgReviews" alt="Santi">
+              <div class="card-body">
+                <h5 class="card-title">Santi</h5>
+                <p class="card-text">El valiente rescatado del refugio, ahora llena nuestros días con alegría y lealtad, recordándonos la importancia de dar segundas oportunidades.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card h-100 CardReviews">
+              <img src="../assets/img/reviews/review2.png" class="card-img-top ImgReviews" alt="Nala">
+              <div class="card-body">
+                <h5 class="card-title">Nala</h5>
+                <p class="card-text">La dulce perrita adoptada, nos ha enseñado el significado del amor incondicional y cómo un pequeño gesto puede marcar la diferencia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card h-100 CardReviews">
+              <img src="../assets/img/reviews/review3.png" class="card-img-top ImgReviews" alt="Casper">
+              <div class="card-body">
+                <h5 class="card-title">Casper</h5>
+                <p class="card-text">El travieso cachorro, encontró en nuestro hogar su lugar para crecer y ser feliz, demostrando que la paciencia y el cariño son recompensados.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="card h-100 CardReviews">
+              <img src="../assets/img/reviews/review4.png" class="card-img-top ImgReviews" alt="Alf y Nuni">
+              <div class="card-body">
+                <h5 class="card-title">Alf y Nuni</h5>
+                <p class="card-text">Dos almas gemelas del refugio, ahora comparten su vida y amor en nuestra familia, inspirándonos a adoptar siempre juntos para darles un hogar completo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+       <!--- Fin Sección Reviews -->
+
+        <!---Sección Involucrarse Salva Vidas -->
+        <div class="row justify-content-center">
+          <h2 class="m-5 col-xl-6 text-center">¡Involucrase salva vidas!</h2>
+       </div>
+        <!--- Fin Sección Involucrarse Salva Vidas -->
+    </main>
+    
+<!--- Sección Footer -->
+<footer id="Legales">
+  <section class="container">
+      <div class="row g-3">
+          <div class="col-md-3" >
+                <div>
+                    <h5 class="h6 fw-bold">Huellitas a Casa</h5>
+                    <p class="fs-6">Es una asociación civil sin fines de lucro localizada en Buenos Aires, Argentina.</p>
+                </div>
+                <div>
+                  <img src="../assets/img/logohuellasacasa.png" class="LogoFooter" alt="Logo Huellitas a Casa">
+                </div>
+          </div>
+
+          <div class="col-md-3">
+              <nav >
+                  <h4 class="h6 fw-bold">Menú</h4>
+                      <ul class="ListaFooter fs-6">
+                          <li><a href="../pages/adopta.html" class="NavFooter">Adoptá</a></li>
+                          <li><a href="../index.html" class="NavFooter">Home</a></li>
+                          <li><a href="../pages/involucrarse.html" class="NavFooter">Involucrarse</a></li>
+                          <li><a href="../pages/sobrenosotros.html" class="NavFooter">Sobre Nosotros</a></li>
+                          <li><a href="../pages/contacto.html" class="NavFooter">Contacto</a></li>
+                      </ul>
+              </nav>
+          </div>
+          <div class="col-md-3">
+              <h4 class="h6 fw-bold" >Políticas de adopción</h4>
+              <p class="fs-6">Las adopciones se hacen con seguimiento. Al hablar con nosotros te las compartimos.</p>
+          </div>
+          <div class="col-md-3 fs-6 text-center">
+              <h4 class="h6 fw-bold" >Seguinos en:</h4>
+              <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/rrss/instagram.png" class="LogosRRSS" alt="Logo Instagram"></a>
+              <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/rrss/facebook.png" class="LogosRRSS" alt="Logo Facebook"></a>
+              <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/rrss/youtube.png"  class="LogosRRSS" alt="Logo Youtube"></a>
+          </div>
+      </div>
+  </section>
+</footer>
+<!--- Sección Footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

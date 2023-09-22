@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Huellitas a Casa</title>
+
     <!-- Nombre y Favicon -->
     <title>Huellitas a Casa</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
@@ -12,240 +13,376 @@
     <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
     <!-- Fin Nombre y Favicon -->
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Fin Bootstrap CSS -->
+
     <!-- Link Documento CSS-->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Fin Link Documento CSS-->
-
+   
     <!-- Link Fuentes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Fin Link Fuentes Google -->
-
+    
 </head>
 <body>
 
-    <!--- Menú de Navegación Header -->
-    <header class="NavBar">
-      <a href="../index.html"><img src="../assets/img/logohuellasacasahorizontal.png" class="ImgChica" alt="Logo Huellitas a Casa"></a>
-        <form>
-          <input type="search" placeholder="¿Qué estás buscando?"><input class="BotonBuscar" type="submit" value="Buscar">
-        </form>
-        <nav>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light NavBarHeader">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="../assets/img/logohuellasacasahorizontal.png" class="ImgChica"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbarjustifyend" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link CTAMenuHeader" aria-current="page" href="../pages/adopta.html">Adoptá</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/involucrarse.html">Involucrarse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/sobrenosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
 
-             <ul>
-                <li class="CTANavMenu"><a href="../pages/adopta.html">Adoptá</a></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/involucrarse.html">Involucrarse</a></li>
-                <li><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-           </ul>
-        </nav>
-    </header>
-<!--- Fin Menú de Navegación Header -->
+<section>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
 
-<section id="ImagenHeader" class="BackgroundHeaderImagen2">
+        <div class="carousel-item d-item">
+          <img src="../assets/img/header/headerhome.png" class="d-block w-100 d-img" alt="Perro feliz">
+          <div class="carousel-caption">
+              <h1 class="display-3 fw-bolder">Queremos que todas las huellitas encuentren su hogar</h1>
+              <a href="../pages/index.html" class="btn btn-header">Conocer más</a>
+
+          </div>
+        </div>
+
+        <div class="carousel-item active d-item">
+          <img src="../assets/img/header/headeradopta.png" class="d-block w-100 d-img" alt="Perro se asoma">
+          <div class="carousel-caption">
+              <h1 class="display-3 fw-bolder">Involucrarse salva vidas. Adoptá, no compres</h1>
+              <a href="../pages/adopta.html" class="btn btn-header">Adoptá</a>
+
+          </div>
+        </div>
+
+        <div class="carousel-item  d-item">
+          <img src="../assets/img/header/headerinvolucrarse.png" class="d-block w-100 d-img" alt="Perro y gato juegan">
+          <div class="carousel-caption">
+              <h1 class="display-3 fw-bolder">Convertite en huelliter, involucrarse salva vidas</h1>
+              <a href="../pages/involucrarse.html" class="btn btn-header">Conocer más</a>
+
+          </div>
+        </div>
+
+        <div class="carousel-item  d-item">
+          <img src="../assets/img/header/hablaconnosotros.png" class="d-block w-100 d-img" alt="Perro y gato juegan">
+          <div class="carousel-caption">
+              <h1 class="display-3 fw-bolder">Hablá con nuestro equipo de Huellitas a Casa</h1>
+              <a href="../pages/contacto.html" class="btn btn-header">Contactarme</a>
+
+          </div>
+        </div>
+
+        <div class="carousel-item  d-item">
+          <img src="../assets/img/header/headernosotros.png" class="d-block w-100 d-img" alt="Perro y gato juegan">
+          <div class="carousel-caption">
+              <h1 class="display-3 fw-bolder">Conocé la historia del equipo de Huellitas a Casa</h1>
+              <a href="../pages/sobrenosotros.html" class="btn btn-header">Conocer más</a>
+
+          </div>
+        </div>
         
-    <div>
-        <h1 class="TituloHeader">Involucrarse salva vidas.<br> Adoptá, no compres</h1>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
-    
 </section>
 
-    <!--- Sección Mascotas en Adopción -->
-    <section id="MascotasHome">
-        <h2 class="Titulo CentrarBloque">Conocé algunos de los huelliters que buscan a su familia para siempre</h2>
-        
-        <div id=MascotasEnAdopcion class="TarjestasMascotas">
-            <article class="FormatoTarjeta">
+<main class="container">
 
-              <img src="../assets/img/mascotasenadopcion/luffy.png" alt="Foto Mascota Luffy">
-              <div class="text">
-                <h3>Luffy</h3>
-                <ul class="ListaVertical">
-                  <il>Género: Macho</il><br>
-                  <il>Castrado: Si</il><br>
-                  <il>Edad: 6 años</il><br>
-                  <il>Personalidad: muy activo. Se lleva bien con otros animales</il>
-                </ul>
-                <a href="../pages/adopta.html">
-                    <button>Adoptar</button>
-                </a>
-              </div>
-            </article>
+  <!--- Sección Mascotas en Adopción -->
+  <div class="row justify-content-center">
+    <h2 class="m-5 col-xl-6 text-center">Conocé algunos de los huelliters que buscan a su familia para siempre</h2>
+  </div>
+  <section class="row g-5">
 
-            <article class="FormatoTarjeta">
-              <img src="../assets/img/mascotasenadopcion/mikasa.png" alt="Foto Mascota Mikasa">
-              <div class="text">
-                <h3>Mikasa</h3>
-                <ul class="ListaVertical">
-                  <il>Género: Hembra</il><br>
-                  <il>Castrado: Si</il><br>
-                  <il>Edad: 3 años</il><br>
-                  <il>Personalidad: muy activa. No se lleva bien con otros animales</il>
-                </ul>
-                <a href="../pages/adopta.html">
-                    <button>Adoptar</button>
-                </a>
-              </div>
-            </article>
-
-            <article class="FormatoTarjeta">
-              <img src="../assets/img/mascotasenadopcion/sakura.png" alt="Foto Mascota Sakura">
-              <div class="text">
-                <h3>Sakura</h3>
-                <ul class="ListaVertical">
-                    <il>Género: Hembra</il><br>
+    <div class="col-md-6 col-xl-4">
+        <div class="card">
+            <img src="../assets/img/mascotasenadopcion/luffy.png" class="card-img-top" alt="Luffy perro en adopción">
+            <div class="card-body">
+              <h5 class="card-title">Luffy</h5>
+                <ul>
+                    <il>Género: Macho</il><br>
                     <il>Castrado: Si</il><br>
-                    <il>Edad: 4 años</il><br>
-                    <il>Personalidad: dormilona. Se lleva bien con otros animales</il>
-                  </ul>
-                  <a href="../pages/adopta.html">
-                    <button>Adoptar</button>
-                </a>
-              </div>
-            </article>
-          </div>
-        
-          <div id=MascotasEnAdopcion class="TarjestasMascotas">
-            <article class="FormatoTarjeta">
-
-              <img src="../assets/img/mascotasenadopcion/shippo.png" alt="Foto Mascota Shippo">
-              <div class="text">
-                <h3>Shippo</h3>
-                <ul class="ListaVertical">
-                  <il>Género: Macho</il><br>
-                  <il>Castrado: Si</il><br>
-                  <il>Edad: 5 años</il><br>
-                  <il>Personalidad: Se lleva bien con otros animales</il>
+                    <il>Edad: 6 años</il><br>
+                    <il>Personalidad: muy activo. Se lleva <br>bien con otros animales</il>
                 </ul>
-                <a href="../pages/adopta.html">
-                    <button>Adoptar</button>
-                </a>
-              </div>
-            </article>
+              <a href="../pages/adopta.html" class="btn btn-primary">Adoptar</a>
+            </div>
+          </div>
+    </div>
 
-            <article class="FormatoTarjeta">
-              <img src="../assets/img/mascotasenadopcion/zoro.png" alt="Foto Mascota Zoro">
-              <div class="text">
-                <h3>Zoro</h3>
-                <ul class="ListaVertical">
+    <div class="col-md-6 col-xl-4">
+        <div class="card">
+            <img src="../assets/img/mascotasenadopcion/mikasa.png" class="card-img-top" alt="Mikasa gatita en adopción">
+            <div class="card-body">
+              <h5 class="card-title">Mikasa</h5>
+                <ul>
+                    <il>Género: Hembra</il><br>
+                    <il>Castrada: Si</il><br>
+                    <il>Edad: 3 años</il><br>
+                    <il>Personalidad: muy activa. No se lleva <br>bien con otros animales</il>
+                </ul>
+              <a href="./pages/adopta.html" class="btn btn-primary">Adoptar</a>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-md-6 col-xl-4">
+        <div class="card">
+            <img src="../assets/img/mascotasenadopcion/sakura.png" class="card-img-top" alt="Sakura perra en adopción">
+            <div class="card-body">
+              <h5 class="card-title">Sakura</h5>
+                <ul>
+                    <il>Género: Hembra</il><br>
+                    <il>Castrada: Si</il><br>
+                    <il>Edad: 4 años</il><br>
+                    <il>Personalidad: dormilona. Se lleva <br>bien con otros animales</il>
+                </ul>
+              <a href="../pages/adopta.html" class="btn btn-primary">Adoptar</a>
+            </div>
+          </div>
+    </div>
+
+    <div class="col-md-6 col-xl-4">
+      <div class="card">
+          <img src="../assets/img/mascotasenadopcion/chopper.png" class="card-img-top" alt="Chopper perro en adopción">
+          <div class="card-body">
+            <h5 class="card-title">Chopper</h5>
+              <ul>
                   <il>Género: Macho</il><br>
                   <il>Castrado: Si</il><br>
                   <il>Edad: 1 año</il><br>
-                  <il>Personalidad: Activa. Se lleva bien con otros animales</il>
-                </ul>
-                <a href="../pages/adopta.html">
-                    <button>Adoptar</button>
-                </a>
-              </div>
-            </article>
+                  <il>Personalidad: dormilon. Se lleva <br>bien con otros animales</il>
+              </ul>
+            <a href="../pages/adopta.html" class="btn btn-primary">Adoptar</a>
+          </div>
+        </div>
+  </div>
 
-            <article class="FormatoTarjeta">
-              <img src="../assets/img/mascotasenadopcion/kirara.png" alt="Foto Mascota Kirara">
-              <div class="text">
-                <h3>Kirara</h3>
-                <ul class="ListaVertical">
-                    <il>Género: Hembra</il><br>
-                    <il>Castrado: Si</il><br>
-                    <il>Edad: 2 meses</il><br>
-                    <il>Personalidad: Juguetona. Se lleva bien con otros animales</il>
-                  </ul>
-                  <a href="../pages/adopta.html">
-                    <button>Adoptar</button>
-                </a>
+  <div class="col-md-6 col-xl-4">
+    <div class="card">
+        <img src="../assets/img/mascotasenadopcion/zoro.png" class="card-img-top" alt="Zoro perro en adopción">
+        <div class="card-body">
+          <h5 class="card-title">Zoro</h5>
+            <ul>
+                <il>Género: Macho</il><br>
+                <il>Castrado: Si</il><br>
+                <il>Edad: 8 meses</il><br>
+                <il>Personalidad: Medio activo. No se lleva <br>bien con otros animales</il>
+            </ul>
+          <a href="../pages/adopta.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <div class="card">
+        <img src="../assets/img/mascotasenadopcion/eren.png" class="card-img-top" alt="Eren perro en adopción">
+        <div class="card-body">
+          <h5 class="card-title">Eren</h5>
+            <ul>
+                <il>Género: Macho</il><br>
+                <il>Castrado: Si</il><br>
+                <il>Edad: 5 años</il><br>
+                <il>Personalidad: dormilón. Se lleva <br>bien con otros animales</il>
+            </ul>
+          <a href="../pages/adopta.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <div class="card">
+        <img src="../assets/img/mascotasenadopcion/kirara.png" class="card-img-top" alt="Kirara gato en adopción">
+        <div class="card-body">
+          <h5 class="card-title">Kirara</h5>
+            <ul>
+                <il>Género: Hembra</il><br>
+                <il>Castrada: Si</il><br>
+                <il>Edad: 3 meses</il><br>
+                <il>Personalidad: Juguetona. Se lleva <br>bien con otros animales</il>
+            </ul>
+          <a href="../pages/adopta.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <div class="card">
+        <img src="../assets/img/mascotasenadopcion/kero.png" class="card-img-top" alt="Kero gato en adopción">
+        <div class="card-body">
+          <h5 class="card-title">Kero</h5>
+            <ul>
+                <il>Género: Macho</il><br>
+                <il>Castrado: Si</il><br>
+                <il>Edad: 4 años</il><br>
+                <il>Personalidad: dormilón. Se lleva <br>bien con otros animales</il>
+            </ul>
+          <a href="../pages/adopta.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="col-md-6 col-xl-4">
+    <div class="card">
+        <img src="../assets/img/mascotasenadopcion/shippo.png" class="card-img-top" alt="Shippo perro en adopción">
+        <div class="card-body">
+          <h5 class="card-title">Shippo</h5>
+            <ul>
+                <il>Género: Macho</il><br>
+                <il>Castrado: Si</il><br>
+                <il>Edad: 2 años</il><br>
+                <il>Personalidad: Alegre. Se lleva <br>bien con otros animales</il>
+            </ul>
+          <a href="../pages/adopta.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+  </div>
+
+    <div class="row justify-content-center">
+        <div class="m-5 text-center"><a href="../pages/adopta.html" class="btn btn-primary">Conocer más huelliters</a></div>
+    </div>
+  </section>
+  <!---Fin Sección Mascotas en Adopción -->
+
+  <!---Sección Reviews -->
+          <div class="row justify-content-center">
+            <h2 class="m-5 col-xl-6 text-center">Historias con finales felices</h2>
+            <h3 class="col-xl-7 text-center h4">Te contamos las historias de los distintos adoptantes de Huellitas a Casa.</h3>
+        </div>
+
+        <section>
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col-md-6 col-xl-3">
+              <div class="card h-100 CardReviews">
+                <img src="../assets/img/reviews/review1.png" class="card-img-top ImgReviews" alt="Santi">
+                <div class="card-body">
+                  <h5 class="card-title">Santi</h5>
+                  <p class="card-text">El valiente rescatado del refugio, ahora llena nuestros días con alegría y lealtad, recordándonos la importancia de dar segundas oportunidades.</p>
+                </div>
               </div>
-            </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="card h-100 CardReviews">
+                <img src="../assets/img/reviews/review2.png" class="card-img-top ImgReviews" alt="Nala">
+                <div class="card-body">
+                  <h5 class="card-title">Nala</h5>
+                  <p class="card-text">La dulce perrita adoptada, nos ha enseñado el significado del amor incondicional y cómo un pequeño gesto puede marcar la diferencia.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="card h-100 CardReviews">
+                <img src="../assets/img/reviews/review3.png" class="card-img-top ImgReviews" alt="Casper">
+                <div class="card-body">
+                  <h5 class="card-title">Casper</h5>
+                  <p class="card-text">El travieso cachorro, encontró en nuestro hogar su lugar para crecer y ser feliz, demostrando que la paciencia y el cariño son recompensados.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="card h-100 CardReviews">
+                <img src="../assets/img/reviews/review4.png" class="card-img-top ImgReviews" alt="Alf y Nuni">
+                <div class="card-body">
+                  <h5 class="card-title">Alf y Nuni</h5>
+                  <p class="card-text">Dos almas gemelas del refugio, ahora comparten su vida y amor en nuestra familia, inspirándonos a adoptar siempre juntos para darles un hogar completo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+  <!---Sección Involucrarse Salva Vidas -->
+    <div class="row justify-content-center">
+      <h2 class="m-5 col-xl-6 text-center">¡Involucrase salva vidas!</h2>
+    </div>
+
+</main>
+
+<!--- Sección Footer -->
+<footer id="Legales">
+  <section class="container">
+      <div class="row g-3">
+          <div class="col-md-3" >
+                <div>
+                    <h5 class="h6 fw-bold">Huellitas a Casa</h5>
+                    <p class="fs-6">Es una asociación civil sin fines de lucro localizada en Buenos Aires, Argentina.</p>
+                </div>
+                <div>
+                  <img src="../assets/img/logohuellasacasa.png" class="LogoFooter" alt="Logo Huellitas a Casa">
+                </div>
           </div>
 
-          <div id=MascotasEnAdopcion class="TarjestasMascotas">
-            <article class="FormatoTarjeta">
-
-              <img src="../assets/img/mascotasenadopcion/eren.png" alt="Foto Mascota Eren">
-              <div class="text">
-                <h3>Eren</h3>
-                <ul class="ListaVertical">
-                  <il>Género: Macho</il><br>
-                  <il>Castrado: Si</il><br>
-                  <il>Edad: 3 años</il><br>
-                  <il>Personalidad: muy activo. Se lleva bien con otros animales</il>
-                </ul>
-                <a href="../pages/adopta.html">
-                    <button>Adoptar</button>
-                </a>
-              </div>
-            </article>
-
-            <article class="FormatoTarjeta">
-              <img src="../assets/img/mascotasenadopcion/kero.png" alt="Foto Mascota Kero">
-              <div class="text">
-                <h3>Kero</h3>
-                <ul class="ListaVertical">
-                  <il>Género: Hembra</il><br>
-                  <il>Castrado: Si</il><br>
-                  <il>Edad: 8 años</il><br>
-                  <il>Personalidad: Tranquila. Se lleva bien con otros animales</il>
-                </ul>
-                <a href="../pages/adopta.html">
-                    <button>Adoptar</button>
-                </a>
-              </div>
-            </article>
-
-            <article class="FormatoTarjeta">
-              <img src="../assets/img/mascotasenadopcion/chopper.png" alt="Foto Mascota Chopper">
-              <div class="text">
-                <h3>Chopper</h3>
-                <ul class="ListaVertical">
-                    <il>Género: Macho</il><br>
-                    <il>Castrado: Si</il><br>
-                    <il>Edad: 1 año</il><br>
-                    <il>Personalidad: Alegre. Se lleva bien con otros animales</il>
-                  </ul>
-                  <a href="../pages/adopta.html">
-                    <button>Adoptar</button>
-                </a>
-              </div>
-            </article>
+          <div class="col-md-3">
+              <nav >
+                  <h4 class="h6 fw-bold">Menú</h4>
+                      <ul class="ListaFooter fs-6">
+                          <li><a href="../pages/adopta.html" class="NavFooter">Adoptá</a></li>
+                          <li><a href="../index.html" class="NavFooter">Home</a></li>
+                          <li><a href="../pages/involucrarse.html" class="NavFooter">Involucrarse</a></li>
+                          <li><a href="../pages/sobrenosotros.html" class="NavFooter">Sobre Nosotros</a></li>
+                          <li><a href="../pages/contacto.html" class="NavFooter">Contacto</a></li>
+                      </ul>
+              </nav>
           </div>
-
-    </section>
-    <!--- Fin Sección Mascotas en Adopción -->
-
-        <!--- Footer -->
-        <footer id="Legales">      
-          <div>
-              <img src="../assets/img/logohuellasacasa.png" class="ImgMediana" alt="Logo Huellas a Casa">
+          <div class="col-md-3">
+              <h4 class="h6 fw-bold" >Políticas de adopción</h4>
+              <p class="fs-6">Las adopciones se hacen con seguimiento. Al hablar con nosotros te las compartimos.</p>
           </div>
-          <div>
-              <h4>Huellitas a casa</h4>
-              <p>Es una asociación civil sin fines de lucro..</p>
-          </div>
-  
-          <nav>
-            <h4>Menú</h4>
-                <ul>
-                    <li><a href="../pages/adopta.html">Adoptá</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/involucrarse.html">Involucrarse</a></li>
-                    <li><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-        </nav>
-  
-          <div>
-              <h4>Políticas de adopción</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adip</p>
-          </div>
-          <div >
-              <h3>Seguinos en:</h3>
+          <div class="col-md-3 fs-6 text-center">
+              <h4 class="h6 fw-bold" >Seguinos en:</h4>
               <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/rrss/instagram.png" class="LogosRRSS" alt="Logo Instagram"></a>
               <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/rrss/facebook.png" class="LogosRRSS" alt="Logo Facebook"></a>
               <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/rrss/youtube.png"  class="LogosRRSS" alt="Logo Youtube"></a>
           </div>
-  
-      </footer>
-      <!--- Fin Footer -->
+      </div>
+  </section>
+</footer>
+<!--- Sección Footer -->
+      
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>

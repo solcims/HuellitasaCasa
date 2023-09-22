@@ -73,6 +73,7 @@ body {font-family: 'Poppins', sans-serif !important}
     border-style: none;
     background: rgb(255, 198, 172);
     padding: 7px 25px;
+    text-decoration: none;
     transition: 0.5s;
 }
 
@@ -169,6 +170,18 @@ iframe {
     border: 1px solid rgba(255, 255, 255, 0.3);}
 /* Fin IFrame */
 
+/* CSS Sobre Nosotros */
+
+.ImgInicio {
+    width: 70%;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Fin CSS Sobre Nosotros */
 
 /* CSS Legales */
 
@@ -196,6 +209,10 @@ iframe {
 
 .ListaFooter {
     list-style: none;
+}
+
+.LogoFooter {
+    width: 20% !important;
 }
 
 /* Fin CSS Legales */

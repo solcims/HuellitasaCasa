@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/* Reseteo */
+/* line 2, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 7, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Imagen Mediana */
+/* line 10, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.ImgMediana {
+  width: 100px;
+  height: 100px;
+}
+
+/* Fin Imagen Mediana */
+/* Imagen Reviews */
+/* line 16, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.ImgReviews {
+  width: 65% !important;
+}
+
+/* Fin Imagen Mediana */
+/* CSS Header */
+/* line 21, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.ImgChica {
+  width: 110px;
+  height: 50px;
+}
+
+/* line 25, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.NavBarHeader {
+  border-radius: 0px;
+  box-shadow: 0 1px 5px rgba(189, 189, 189, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 5;
+}
+
+/* line 32, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.bg-light {
+  background: white !important;
+}
+
+/* line 35, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.CTAMenuHeader {
+  color: white;
+  border-radius: 20px;
+  background: #ffc6ac;
+  box-shadow: 2px 2px 2px 0px rgba(66, 66, 66, 0.09);
+  margin: 2px 5px;
+  padding: 6px 20px !important;
+  transition: .5s;
+}
+
+/* line 44, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.navbarjustifyend {
+  justify-content: end !important;
+}
+
+/* line 47, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.nav-link {
+  color: #333333 !important;
+}
+
+/* line 50, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.nav-link:hover {
+  color: #ffc6ac !important;
+}
+
+/* line 53, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.CTAMenuHeader:hover {
+  background: #fba881;
+  color: #333333 !important;
+}
+
+/* line 57, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.active {
+  color: #fba881 !important;
+}
+
+/* line 60, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.d-item {
+  height: 700px;
+}
+
+/* line 63, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.d-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+/* line 68, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.carousel-caption {
+  bottom: 27%;
+}
+
+/* line 70, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.btn-header {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  border-style: none;
+  background: #ffc6ac;
+  padding: 7px 25px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/* line 81, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.btn-header:hover {
+  background: #fba881;
+  color: #333333;
+  transform: scale(1.03);
+}
+
+/* Fin CSS Header */
+/* CSS Headings */
+/* line 92, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+h2 {
+  font-weight: 600;
+}
+
+/* line 95, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+h3 {
+  margin-bottom: 3rem !important;
+}
+
+/* Fin CSS Headings */
+/* CSS Tarjetas Mascotas */
+/* line 103, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.card {
+  border: none !important;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+}
+
+/* line 112, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* line 116, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.card-img-top {
+  border-radius: calc(1.5rem - 1px);
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+/* line 123, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.card-body {
+  text-align: center;
+  color: #333333;
+  font-weight: normal;
+}
+
+/* line 128, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.btn-primary {
+  color: white;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  border-style: none;
+  background: #ffc6ac;
+  padding: 7px 25px;
+}
+
+/* line 135, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.btn-primary:hover {
+  background: #fba881;
+  color: #333333;
+}
+
+/* line 139, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.btn-primary:focus {
+  background-color: #fba881 !important;
+  border-color: #fba881 !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 221, 205, 0.685) !important;
+}
+
+/* Fin CSS Tarjetas Mascotas */
+/* CSS Tarjetas Huelliters */
+/* line 147, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.CardHuelliters {
+  background-color: #fff6dc;
+}
+
+/* Fin CSS Tarjetas Huelliters */
+/* CSS Tarjetas Reviews */
+/* line 155, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.CardReviews {
+  background-color: none;
+  border-style: none;
+  box-shadow: none;
+}
+
+/* line 161, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.CardReviews:hover {
+  transform: none;
+}
+
+/* IFrame */
+/* line 166, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+iframe {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 16px;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Fin IFrame */
+/* CSS Sobre Nosotros */
+/* line 182, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.ImgInicio {
+  width: 70%;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Fin CSS Sobre Nosotros */
+/* CSS Legales */
+/* line 195, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+#Legales {
+  background-color: #9e9fa5;
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
+/* line 203, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.LogosRRSS {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+/* line 208, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.NavFooter {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* line 213, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.NavFooter:hover {
+  color: #ffc6ac;
+}
+
+/* line 217, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.ListaFooter {
+  list-style: none;
+}
+
+/* line 221, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.LogoFooter {
+  width: 20% !important;
+}
+
+/* Fin CSS Legales */
+/* CSS Paginación */
+/* line 228, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.page-link {
+  border-style: none;
+  color: #c4c1a4;
+}
+
+/* line 233, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+.page-link:hover {
+  color: #827f64;
+  background-color: #ffc6ac;
+  border-radius: 1.5 rem;
+}
+
+/* Fin CSS Paginación */
+/* CSS Contacto */
+/* line 244, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+#HablaConNosotros form div div input {
+  border-radius: 1rem;
+  padding: 4px 10px;
+  width: 65%;
+  border-color: #c4c1a4;
+  border-width: 1px;
+}
+
+/* line 252, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+#HablaConNosotros form div div textarea {
+  border-radius: 1rem;
+  padding: 4px 15px;
+  width: 50%;
+  border-color: #c4c1a4;
+  border-width: 1px;
+  color: #595a5a;
+}
+
+/* Fin CSS Contacto */
+
+/*# sourceMappingURL=styles.css.map */

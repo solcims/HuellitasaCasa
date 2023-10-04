@@ -30,7 +30,7 @@ body {font-family: 'Poppins', sans-serif !important}
     z-index: 5;}
 
 .bg-light {
-    background: rgba(255, 255, 255) !important;}
+    background: rgb(255, 255, 255) !important;}
 
 .CTAMenuHeader {
     color: rgb(255, 255, 255);
@@ -136,12 +136,18 @@ h3 {
     background: rgb(251, 168, 129);
     color: rgb(51, 51, 51);}
 
+.btn-primary:focus {
+    background-color: rgb(251, 168, 129) !important;
+    border-color: rgb(251, 168, 129) !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 221, 205, 0.685) !important;}
 /* Fin CSS Tarjetas Mascotas */
 
 
 /* CSS Tarjetas Huelliters */
 .CardHuelliters {
     background-color: rgb(255, 246, 220);}
+
+
 /* Fin CSS Tarjetas Huelliters */
 
 /* CSS Tarjetas Reviews */

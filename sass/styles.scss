@@ -4,7 +4,16 @@
     padding: 0;
     box-sizing: border-box;}
 
-body {font-family: 'Poppins', sans-serif !important}
+/* variables sass */
+
+$fuente-global: 'Poppins', 'sans-serif';
+$color-rosa-ctas-base: rgb(255, 198, 172);
+$color-rosa-ctas-hover: rgb(251, 168, 129);
+$color-tarjeta-huelliter: rgb(255, 246, 220);
+
+body {
+    font-family: $fuente-global !important;
+}
 
 /* Imagen Mediana */
 .ImgMediana 
@@ -35,27 +44,26 @@ body {font-family: 'Poppins', sans-serif !important}
 .CTAMenuHeader {
     color: rgb(255, 255, 255);
     border-radius: 20px;
-    background: rgb(255, 198, 172);
+    background: $color-rosa-ctas-base;
     box-shadow: 2px 2px 2px 0px rgba(66, 66, 66, 0.09);
     margin: 2px 5px;
     padding: 6px 20px !important;
-    transition: .5s;}
+    transition: .5s;
+    &:hover {
+    background: $color-rosa-ctas-hover;
+    color: rgb(51, 51, 51) !important;}
+    }
 
 .navbarjustifyend {
     justify-content: end !important;}
 
 .nav-link {
-    color: rgb(51, 51, 51) !important;}
-
-.nav-link:hover {
-    color: rgb(255, 198, 172) !important;}
-
-.CTAMenuHeader:hover {
-    background: rgb(251, 168, 129);
-    color: rgb(51, 51, 51) !important;}
+    color: rgb(51, 51, 51) !important;
+    &:hover {color: $color-rosa-ctas-hover !important;}
+}
 
 .active {
-    color: rgb(251, 168, 129) !important;}
+    color: $color-rosa-ctas-hover !important;}
 
 .d-item {
     height: 700px;}
@@ -72,16 +80,14 @@ body {font-family: 'Poppins', sans-serif !important}
     font-size: 1.5rem;
     border-radius: 1.5rem;
     border-style: none;
-    background: rgb(255, 198, 172);
+    background: $color-rosa-ctas-base;
     padding: 7px 25px;
     text-decoration: none;
     transition: 0.5s;
-}
-
-.btn-header:hover {
-    background: rgb(251, 168, 129);
+    &:hover {
+    background: $color-rosa-ctas-hover;
     color: rgb(51, 51, 51);
-    transform: scale(1.03);
+    transform: scale(1.03);}
 }
 
 
@@ -107,10 +113,9 @@ h3 {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    transition: 0.5s;}
+    transition: 0.5s;
 
-.card:hover {
-    transform: scale(1.03);
+    &:hover {transform: scale(1.03);}
 }
 
 .card-img-top {
@@ -129,25 +134,21 @@ h3 {
     font-weight: 600;
     border-radius: 1.5rem;
     border-style: none;
-    background: rgb(255, 198, 172);
-    padding: 7px 25px;}
+    background: $color-rosa-ctas-base;
+    padding: 7px 25px;
 
-.btn-primary:hover {
-    background: rgb(251, 168, 129);
+    &:hover {background: $color-rosa-ctas-hover;
     color: rgb(51, 51, 51);}
-
-.btn-primary:focus {
-    background-color: rgb(251, 168, 129) !important;
-    border-color: rgb(251, 168, 129) !important;
+    &:focus {background-color: $color-rosa-ctas-hover !important;
+    border-color: $color-rosa-ctas-hover !important;
     box-shadow: 0 0 0 0.25rem rgba(255, 221, 205, 0.685) !important;}
+}
 /* Fin CSS Tarjetas Mascotas */
 
 
 /* CSS Tarjetas Huelliters */
 .CardHuelliters {
-    background-color: rgb(255, 246, 220);}
-
-
+    background-color: $color-tarjeta-huelliter;}
 /* Fin CSS Tarjetas Huelliters */
 
 /* CSS Tarjetas Reviews */
@@ -156,10 +157,7 @@ h3 {
     background-color: none;
     border-style: none;
     box-shadow: none;
-}
-
-.CardReviews:hover {
-    transform: none;
+    &:hover {transform: none;}
 }
 
 /* IFrame */
@@ -208,10 +206,8 @@ iframe {
 .NavFooter {
     text-decoration: none;
     color: rgb(51, 51, 51);
-    font-family: 'Poppins', sans-serif;}
-
-.NavFooter:hover {
-    color: rgb(255, 198, 172);
+    font-family: 'Poppins', sans-serif;
+    &:hover {color: $color-rosa-ctas-base;}
 }
 
 .ListaFooter {
@@ -228,12 +224,10 @@ iframe {
 .page-link {
     border-style: none;
     color: rgb(196, 193, 164);
-}
-
-.page-link:hover {
+    &:hover {
     color:rgb(130, 127, 100);
-    background-color: rgb(255, 198, 172);
-    border-radius: 1.5 rem;
+    background-color: $color-rosa-ctas-base;
+    border-radius: 1.5rem;}
 }
 
 

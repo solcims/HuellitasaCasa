@@ -275,22 +275,23 @@ iframe {
 /* line 213, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
 .ListaFooter {
   list-style: none;
+  padding: 0px !important;
 }
 
-/* line 217, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+/* line 218, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
 .LogoFooter {
   width: 20% !important;
 }
 
 /* Fin CSS Legales */
 /* CSS Paginación */
-/* line 224, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+/* line 225, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
 .page-link {
   border-style: none;
   color: #c4c1a4;
 }
 
-/* line 227, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+/* line 228, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
 .page-link:hover {
   color: #827f64;
   background-color: #ffc6ac;
@@ -299,7 +300,7 @@ iframe {
 
 /* Fin CSS Paginación */
 /* CSS Contacto */
-/* line 238, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+/* line 239, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
 #HablaConNosotros form div div input {
   border-radius: 1rem;
   padding: 4px 10px;
@@ -308,7 +309,7 @@ iframe {
   border-width: 1px;
 }
 
-/* line 246, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
+/* line 247, ../../../Users/SOL/Documents/CoderHouse/Sol Martinez Schippert Página Web/www.huellitasacasa.com.ar/sass/styles.scss */
 #HablaConNosotros form div div textarea {
   border-radius: 1rem;
   padding: 4px 15px;

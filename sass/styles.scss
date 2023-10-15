@@ -41,6 +41,14 @@ body {
 .bg-light {
     background: rgb(255, 255, 255) !important;}
 
+.navbarjustifyend {
+    justify-content: end !important;}
+
+.nav-link {
+    color: rgb(51, 51, 51) !important;
+    &:hover {color: $color-rosa-ctas-hover !important;}
+}
+
 .CTAMenuHeader {
     color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -53,14 +61,6 @@ body {
     background: $color-rosa-ctas-hover;
     color: rgb(51, 51, 51) !important;}
     }
-
-.navbarjustifyend {
-    justify-content: end !important;}
-
-.nav-link {
-    color: rgb(51, 51, 51) !important;
-    &:hover {color: $color-rosa-ctas-hover !important;}
-}
 
 .active {
     color: $color-rosa-ctas-hover !important;}
@@ -88,6 +88,9 @@ body {
     background: $color-rosa-ctas-hover;
     color: rgb(51, 51, 51);
     transform: scale(1.03);}
+    &:focus {background-color: $color-rosa-ctas-hover !important;
+    border-color: $color-rosa-ctas-hover !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 221, 205, 0.685) !important;}
 }
 
 
@@ -239,7 +242,7 @@ iframe {
 #HablaConNosotros form div div input {
     border-radius: 1rem;
     padding: 4px 10px;
-    width: 65%;
+    width: 92%;
     border-color:rgb(196, 193, 164);
     border-width: 1px;
 }
@@ -247,7 +250,7 @@ iframe {
 #HablaConNosotros form div div textarea {
     border-radius: 1rem;
     padding: 4px 15px;
-    width: 50%;
+    width: 60%;
     border-color:rgb(196, 193, 164);
     border-width: 1px;
     color: rgb(89, 90, 90);
